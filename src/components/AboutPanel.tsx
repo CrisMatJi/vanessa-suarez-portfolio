@@ -22,7 +22,7 @@ export default function AboutPanel({ isOpen, onClose }: Props) {
         <div className={styles.content}>
           <div className={styles.imageCol}>
             <div className={styles.imgWrap}>
-              <img src="/vanessa.jpeg" alt="Vanessa Suárez" className={styles.photo} />
+              <img src={`${import.meta.env.BASE_URL}vanessa.jpeg`} alt="Vanessa Suárez" className={styles.photo} />
             </div>
             <div className={styles.deco} aria-hidden />
           </div>

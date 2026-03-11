@@ -10,12 +10,14 @@ export interface Project {
   coverImage: string;
 }
 
+const base = import.meta.env.BASE_URL;
+
 const ceaImages = Array.from({ length: 8 }, (_, i) =>
-  `/projects/cea/cea-${String(i + 1).padStart(2, '0')}.jpeg`
+  `${base}projects/cea/cea-${String(i + 1).padStart(2, '0')}.jpeg`
 );
 
 const soponImages = Array.from({ length: 12 }, (_, i) =>
-  `/projects/sopon/sopon-${String(i + 1).padStart(2, '0')}.jpg`
+  `${base}projects/sopon/sopon-${String(i + 1).padStart(2, '0')}.jpg`
 );
 
 export const projects: Project[] = [

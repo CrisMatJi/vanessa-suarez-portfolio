@@ -11,7 +11,7 @@ export default function Home({ onProjectClick }: HomeProps) {
     <main className={styles.home}>
       {/* Background photo */}
       <div className={styles.heroBg} aria-hidden>
-        <img src="/vanessa.jpeg" alt="" />
+        <img src={`${import.meta.env.BASE_URL}vanessa.jpeg`} alt="" />
         <div className={styles.heroBgOverlay} />
       </div>
       {/* Eyebrow */}
