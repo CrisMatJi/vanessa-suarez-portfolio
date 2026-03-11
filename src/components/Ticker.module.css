@@ -1,0 +1,28 @@
+.ticker {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  padding: 0.7rem 0;
+  flex-shrink: 0;
+  user-select: none;
+  pointer-events: none;
+}
+.track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker 30s linear infinite;
+}
+.item {
+  font-size: 0.5625rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 0 1.5rem;
+}
+.sep {
+  margin-left: 1.5rem;
+  font-size: 0.5rem;
+  color: var(--theme-accent);
+  vertical-align: middle;
+  opacity: 0.6;
+}

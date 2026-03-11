@@ -1,0 +1,76 @@
+.inner { min-height: 100vh; display: flex; flex-direction: column; }
+
+.topBar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center;
+  padding: 0 2.5rem; height: 56px;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.backBtn { display: flex; align-items: center; gap: 0.75rem; transition: opacity 0.2s; }
+.backBtn:hover { opacity: 0.6; }
+.backArrow { font-size: 0.875rem; color: var(--text-primary); }
+
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  padding: 6rem 4rem 6rem 2.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.imageCol { position: relative; }
+.imgWrap { aspect-ratio: 3/4; overflow: hidden; }
+.photo {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+.imgWrap:hover .photo { transform: scale(1.04); }
+.deco {
+  position: absolute;
+  inset: -1.25rem -1.25rem -1.25rem 1.25rem;
+  border: 1px solid var(--border);
+  z-index: -1; pointer-events: none;
+}
+
+.textCol { display: flex; flex-direction: column; gap: 2rem; }
+.headline {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+  font-weight: 300;
+  line-height: 1.15;
+}
+.headline em { font-style: italic; color: var(--accent); }
+
+.body { display: flex; flex-direction: column; gap: 1rem; }
+.body p {
+  font-size: 0.9375rem;
+  line-height: 1.85;
+  color: var(--text-secondary);
+}
+
+.creds {
+  display: flex; gap: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.credItem { display: flex; flex-direction: column; gap: 0.3rem; }
+.credNum {
+  font-family: var(--font-serif);
+  font-size: 2rem; font-weight: 300;
+  color: var(--text-primary);
+}
+
+@media (max-width: 900px) {
+  .content { grid-template-columns: 1fr; gap: 3rem; padding: 3rem 1.25rem; }
+  .imgWrap { max-width: 360px; }
+  .deco { display: none; }
+}

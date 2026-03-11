@@ -1,0 +1,33 @@
+/* ── Viewport: everything below the navbar ── */
+.viewport {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+/*
+  Track: 3 panels arranged horizontally.
+  Panel1 (HomePanel)    = 66.667vw
+  Panel2 (PortraitPanel) = 33.333vw
+  Panel3 (ProjectDetail) = 66.667vw
+  Total                  = 166.667vw
+
+  State 1 (home): shows Panel1 + Panel2 (translateX 0)
+  State 2 (project open): shows Panel2 + Panel3 (translateX -66.667vw)
+*/
+.track {
+  display: flex;
+  align-items: stretch;
+  width: 166.667vw;
+  height: 100%;
+  transform: translateX(0);
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.shifted {
+  transform: translateX(-66.667vw);
+}
