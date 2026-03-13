@@ -3,7 +3,6 @@ export interface Project {
   title: string;
   subtitle: string;
   category: string;
-  year: string;
   location: string;
   description: string;
   images: string[];
@@ -26,7 +25,6 @@ export const projects: Project[] = [
     title: 'CEA',
     subtitle: 'Interiorismo Corporativo',
     category: 'Arquitectura Interior',
-    year: '2025',
     location: 'Sevilla, España',
     description:
       'Reforma integral de las instalaciones corporativas de CEA Empresas Andaluzas. El proyecto parte de una paleta de soluciones de lujo contenido: mármol blanco, terciopelo rojo burdeos y detalles en latón dorado definen la recepción y las salas de reunión. La luz indirecta y la volumetría suave de los falsos techos crean una experiencia espacial que transmite solidez, confianza e identidad institucional.',
@@ -38,7 +36,6 @@ export const projects: Project[] = [
     title: 'SOPÓN',
     subtitle: 'Espacio Gastronómico',
     category: 'Interiorismo Gastronómico',
-    year: '2020',
     location: 'Andalucía, España',
     description:
       'SOPÓN es un proyecto de diseño integral para un espacio gastronómico de inspiración andaluza. El concepto parte de la tradición culinaria y cultural del sur: los tablaos, los taberneos, la cerámica artesanal y la luz rasante del atardecer. Se propone una separación de espacios mediante elementos textiles, iluminación escultórica en corten y piezas únicas que dotan al local de carácter y memoria.',

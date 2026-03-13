@@ -10,7 +10,7 @@ export default function Navbar({ onAbout, onContact }: NavbarProps) {
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <span className={styles.initials}>VS</span>
-        <span className={styles.brand}>Interiorismo</span>
+        <span className={styles.brand}>Interiorismo Arquitéctonico</span>
       </div>
       <ul className={styles.links}>
         <li><button onClick={onAbout}>Sobre mí</button></li>

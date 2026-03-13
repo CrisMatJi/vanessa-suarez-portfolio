@@ -4,9 +4,8 @@
   height: 100%;
   flex-shrink: 0;
   background-color: var(--theme-bg);
-  background-image:
-    repeating-linear-gradient(0deg,   transparent, transparent 39px, rgba(0,0,0,0.06) 39px, rgba(0,0,0,0.06) 40px),
-    repeating-linear-gradient(90deg,  transparent, transparent 39px, rgba(0,0,0,0.06) 39px, rgba(0,0,0,0.06) 40px);
+  background-image: radial-gradient(circle, rgba(0,0,0,0.10) 1px, transparent 1px);
+  background-size: 28px 28px;
   transition:
     --theme-bg 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     background-color 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -60,6 +59,17 @@
   margin-bottom: 1.25rem;
 }
 
+.heroMeta .label,
+.topBar .label {
+  font-family: var(--font-serif);
+  font-size: 0.8125rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: var(--text-secondary);
+}
+
 .title {
   font-family: 'Antonio', sans-serif;
   font-size: clamp(3.5rem, 9vw, 8rem);
@@ -73,10 +83,11 @@
 
 .subtitle {
   font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.5vw, 1.1875rem);
+  font-size: clamp(1.0625rem, 1.5vw, 1.3125rem);
   font-style: italic;
   font-weight: 300;
   color: var(--text-secondary);
+  letter-spacing: 0.01em;
 }
 
 /* ── Cover image ── */

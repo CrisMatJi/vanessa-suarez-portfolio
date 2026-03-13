@@ -59,7 +59,7 @@
 }
 
 .captionSub {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans-serif);
   font-size: 0.9375rem;
   font-style: italic;
   font-weight: 300;

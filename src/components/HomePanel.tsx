@@ -10,18 +10,11 @@ interface Props {
 export default function HomePanel({ onProjectClick, onHover }: Props) {
   return (
     <section className={styles.panel}>
-
-      {/* Eyebrow */}
-      <div className={styles.eyebrow}>
-        <span className="label">B A S A D A &nbsp; E N &nbsp; E S P A Ñ A</span>
-        <span className="label">I N T E R I O R I S M O &nbsp; · &nbsp; A R Q U I T E C T U R A</span>
-      </div>
-
       {/* Name block */}
       <div className={styles.nameBlock}>
         <h1 className={styles.name}>
           <span className={styles.line1}>Vanessa</span>
-          <span className={styles.line2}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suárez</span>
+          <span className={styles.line2}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suárez</span>
         </h1>
         <div className={styles.aside}>
           <p className={styles.tagline}>
