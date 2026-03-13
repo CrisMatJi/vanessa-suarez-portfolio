@@ -63,8 +63,8 @@ export default function ContactPanel({ isOpen, onClose }: Props) {
                 vanessa_cal_sua@gmail.com
               </a>
               <div className={styles.socials}>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="label">Instagram</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="label">LinkedIn</a>
+                <a href="https://www.instagram.com/vanessa_suarez_interiorismo/" target="_blank" rel="noopener noreferrer" className="label">Instagram</a>
+                <a href="https://www.linkedin.com/in/vanessa-calvente-suarez-932b14371/" target="_blank" rel="noopener noreferrer" className="label">LinkedIn</a>
               </div>
             </div>
           </div>
