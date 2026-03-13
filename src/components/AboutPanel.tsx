@@ -63,20 +63,6 @@ export default function AboutPanel({ isOpen, onClose }: Props) {
               </p>
             </div>
 
-            <div className={styles.creds}>
-              <div className={styles.credItem}>
-                <span className={styles.credNum}>+5</span>
-                <span className="label">años de experiencia</span>
-              </div>
-              <div className={styles.credItem}>
-                <span className={styles.credNum}>10+</span>
-                <span className="label">proyectos terminados</span>
-              </div>
-              <div className={styles.credItem}>
-                <span className={styles.credNum}>2</span>
-                <span className="label">en portfolio activo</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
