@@ -31,3 +31,12 @@
 .shifted {
   transform: translateX(-66.667vw);
 }
+
+@media (max-width: 768px) {
+  .track {
+    width: 200vw;
+  }
+  .shifted {
+    transform: translateX(-100vw);
+  }
+}

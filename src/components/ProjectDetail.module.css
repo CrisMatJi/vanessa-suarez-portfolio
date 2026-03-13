@@ -18,6 +18,30 @@
   overscroll-behavior: contain;
 }
 
+@media (max-width: 768px) {
+  .panel {
+    width: 100vw;
+  }
+  .hero {
+    padding: 2rem 1.25rem 1.5rem;
+  }
+  .title {
+    font-size: clamp(3rem, 16vw, 5rem);
+  }
+  .description {
+    padding: 2rem 1.25rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .next {
+    padding: 2rem 1.25rem 3rem;
+  }
+  .topBar {
+    padding: 1rem 1.25rem;
+  }
+}
+
 /* ── Top bar (sticky) ── */
 .topBar {
   position: sticky;

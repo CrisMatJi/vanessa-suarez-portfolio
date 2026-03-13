@@ -22,6 +22,21 @@
   max-width: 1200px; width: 100%; margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2.5rem 1.25rem;
+  }
+  .row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .topBar {
+    padding: 0 1.25rem;
+  }
+}
+
 .left { display: flex; flex-direction: column; gap: 2rem; }
 .headline {
   font-family: var(--font-serif);

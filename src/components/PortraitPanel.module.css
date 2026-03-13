@@ -67,3 +67,9 @@
   line-height: 1.6;
   transition: color 0.65s, --theme-accent 0.65s;
 }
+
+@media (max-width: 768px) {
+  .panel {
+    display: none;
+  }
+}

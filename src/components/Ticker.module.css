@@ -1,7 +1,7 @@
 .ticker {
   overflow: hidden;
   border-top: 1px solid var(--border);
-  padding: 0.7rem 0;
+  padding: 0.85rem 0;
   flex-shrink: 0;
   user-select: none;
   pointer-events: none;
@@ -9,15 +9,15 @@
 .track {
   display: inline-flex;
   white-space: nowrap;
-  animation: ticker 30s linear infinite;
+  animation: tickerScroll 25s linear infinite;
 }
 .item {
-  font-size: 0.5625rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text-muted);
-  padding: 0 1.5rem;
+  color: var(--text-secondary);
+  padding: 0 1.75rem;
 }
 .sep {
   margin-left: 1.5rem;
@@ -25,4 +25,9 @@
   color: var(--theme-accent);
   vertical-align: middle;
   opacity: 0.6;
+}
+
+@keyframes tickerScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
