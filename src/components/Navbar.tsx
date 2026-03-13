@@ -3,15 +3,16 @@ import styles from './Navbar.module.css';
 interface NavbarProps {
   onAbout: () => void;
   onContact: () => void;
+  onHome: () => void;
 }
 
-export default function Navbar({ onAbout, onContact }: NavbarProps) {
+export default function Navbar({ onAbout, onContact, onHome }: NavbarProps) {
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}>
+      <button className={styles.logo} onClick={onHome}>
         <span className={styles.initials}>VS</span>
         <span className={styles.brand}>Interiorismo Arquitéctonico</span>
-      </div>
+      </button>
       <ul className={styles.links}>
         <li><button onClick={onAbout}>Sobre mí</button></li>
         <li>

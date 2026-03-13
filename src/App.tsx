@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Trifold from './components/Trifold';
 import AboutPanel from './components/AboutPanel';
 import ContactPanel from './components/ContactPanel';
+import CustomCursor from './components/CustomCursor';
 
 type Overlay = null | 'about' | 'contact';
 
@@ -18,9 +19,11 @@ export default function App() {
 
   return (
     <>
+      <CustomCursor />
       <Navbar
         onAbout={() => setOverlay('about')}
         onContact={() => setOverlay('contact')}
+        onHome={() => setActiveProjectId(null)}
       />
       <Trifold
         activeProjectId={activeProjectId}

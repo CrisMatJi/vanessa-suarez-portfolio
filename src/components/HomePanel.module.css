@@ -148,10 +148,12 @@
 }
 
 .ptitle {
-  font-family: var(--font-serif);
-  font-size: clamp(1.25rem, 3vw, 2.25rem);
+  font-family: 'Antonio', sans-serif;
+  font-size: clamp(1.1rem, 2.2vw, 1.75rem);
   font-weight: 400;
-  color: var(--text-primary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
   transition: color 0.2s;
 }
 
