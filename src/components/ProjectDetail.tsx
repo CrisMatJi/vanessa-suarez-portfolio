@@ -38,7 +38,6 @@ export default function ProjectDetail({ project, onClose, onProjectClick }: Prop
             {/* ── Hero text ── */}
             <header className={styles.hero}>
               <div className={styles.heroMeta}>
-                <span className="label">{project.year}</span>
                 <span className="label">{project.location}</span>
               </div>
               <h2 className={styles.title}>{project.title}</h2>

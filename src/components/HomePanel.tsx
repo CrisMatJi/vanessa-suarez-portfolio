@@ -41,7 +41,6 @@ export default function HomePanel({ onProjectClick, onHover }: Props) {
             <span className={styles.num}>0{i + 1}</span>
             <span className={styles.ptitle}>{p.title}</span>
             <span className={`${styles.pmeta} label`}>{p.subtitle}</span>
-            <span className={`${styles.pyear} label`}>{p.year}</span>
             <span className={styles.arrow}>→</span>
           </button>
         ))}
