@@ -38,19 +38,28 @@ export default function AboutPanel({ isOpen, onClose }: Props) {
 
             <div className={styles.body}>
               <p>
-                Soy Vanessa Suárez, interiorista y arquitecta de interiores.
-                Mi trabajo parte siempre de escuchar: cada proyecto comienza
-                por entender cómo viven, trabajan y sienten mis clientes.
+                Entiendo el interiorismo como una forma de pensar el espacio.
               </p>
               <p>
-                Diseño espacios que tienen alma. Combino la funcionalidad
-                estricta con una selección cuidada de materiales, texturas y
-                luz para crear entornos que perduran en el tiempo y que se
-                sienten genuinamente propios.
+                Cada proyecto comienza con el análisis del lugar: cómo funciona,
+                cómo se recorre y qué necesita realmente. A partir de ahí, el diseño
+                se construye de manera ordenada, tomando decisiones que responden
+                tanto a la función como al carácter del espacio.
               </p>
               <p>
-                Cada reforma, cada propuesta, es un diálogo entre el
-                espacio existente y el que podría llegar a ser.
+                Trabajo desde un enfoque técnico donde distribución, usos,
+                materialidad e iluminación forman parte de una misma lógica.
+                Me interesa que el proyecto tenga coherencia y que cada elemento
+                encuentre su lugar dentro del conjunto.
+              </p>
+              <p>
+                Al mismo tiempo, presto especial atención al detalle: ese gesto
+                o material que aporta identidad y hace que el espacio deje de
+                ser genérico.
+              </p>
+              <p>
+                Mi manera de trabajar busca precisamente eso: crear espacios
+                claros, funcionales y con carácter propio.
               </p>
             </div>
 
