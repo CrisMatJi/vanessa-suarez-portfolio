@@ -47,9 +47,6 @@ export default function ProjectDetail({ project, onClose, onProjectClick }: Prop
             {/* ── Cover image ── */}
             <div className={styles.cover}>
               <img src={project.images[0]} alt={project.title} />
-              <button className={styles.coverBack} onClick={onClose}>
-                ← Volver
-              </button>
             </div>
 
             {/* ── Description ── */}

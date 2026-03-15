@@ -33,7 +33,7 @@ export default function Trifold({ activeProjectId, onProjectOpen, onProjectClose
     <div className={styles.viewport}>
       <div className={`${styles.track} ${isOpen ? styles.shifted : ''}`}>
         <HomePanel onProjectClick={onProjectOpen} onHover={setHoveredId} />
-        <PortraitPanel />
+        <PortraitPanel onBack={isOpen ? onProjectClose : undefined} />
         <ProjectDetail
           project={activeProject}
           onClose={onProjectClose}
