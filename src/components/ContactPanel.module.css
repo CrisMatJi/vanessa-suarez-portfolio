@@ -82,6 +82,12 @@
   color: #fff;
 }
 
+.socialBtnInstagram:hover {
+  background: #e1306c;
+  border-color: #e1306c;
+  color: #fff;
+}
+
 .socialIcon {
   width: 13px;
   height: 13px;
