@@ -1,6 +1,6 @@
-/* ── Panel 3: Project detail (2/3 of viewport) ── */
+/* ── Panel 3: Project detail (full viewport) ── */
 .panel {
-  width: 66.667vw;
+  width: 100vw;
   height: 100%;
   flex-shrink: 0;
   background-color: var(--theme-bg);
@@ -38,7 +38,38 @@
     padding: 2rem 1.25rem 3rem;
   }
   .topBar {
-    padding: 1rem 1.25rem;
+    padding: 0.75rem 1.25rem;
+  }
+  .topBar > :global(.label) {
+    display: none;
+  }
+  .topBarLeft {
+    gap: 0.6rem;
+  }
+  .proyectosBtn {
+    padding: 0.3rem 0.6rem;
+  }
+  .imageFull {
+    margin: 0 1.25rem;
+    aspect-ratio: 4 / 3;
+  }
+  .imageCaption {
+    margin: 0 1.25rem;
+    padding: 1.5rem 0 0;
+  }
+  .imageCaption p {
+    font-size: 1rem;
+  }
+  .imageSection {
+    padding: 2rem 0 3rem;
+  }
+  .duo {
+    flex-direction: column;
+    gap: 3px;
+    margin: 0 1.25rem;
+  }
+  .duoItem {
+    aspect-ratio: 3 / 2;
   }
 }
 
@@ -57,6 +88,19 @@
   border-bottom: 1px solid var(--border);
 }
 
+.topBarLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topBarDivider {
+  width: 1px;
+  height: 12px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
 .backBtn {
   display: flex;
   align-items: center;
@@ -70,6 +114,24 @@
 
 .backArrow {
   font-size: 0.875rem;
+}
+
+.proyectosBtn {
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.8rem;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s;
+}
+.proyectosBtn:hover {
+  border-color: var(--theme-accent);
+  color: var(--theme-accent);
 }
 
 /* ── Hero ── */
@@ -109,7 +171,7 @@
   font-family: var(--font-serif);
   font-size: clamp(1.0625rem, 1.5vw, 1.3125rem);
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-secondary);
   letter-spacing: 0.01em;
 }
@@ -166,6 +228,93 @@
   max-width: 60ch;
 }
 
+/* ── Intro description (editorial layout) ── */
+.intro {
+  padding: 3rem 4vw 3.5rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.intro p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.0625rem, 1.35vw, 1.1875rem);
+  font-weight: 400;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  max-width: 60ch;
+  text-align: left;
+}
+
+/* ── Editorial layout: contained image + centered caption ── */
+.imageSection {
+  padding: 3rem 0 4rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.imageFull {
+  margin: 0 4vw;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.10);
+}
+
+.imageFull img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.imageFull:hover img {
+  transform: scale(1.03);
+}
+
+.imageCaption {
+  margin: 0 4vw;
+  padding: 2.25rem 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.imageCaption p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.0625rem, 1.35vw, 1.1875rem);
+  font-weight: 400;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  max-width: 60ch;
+  text-align: left;
+}
+
+/* ── Duo: two images side by side ── */
+.duo {
+  display: flex;
+  gap: 3px;
+  margin: 0 4vw;
+}
+
+.duoItem {
+  flex: 1;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--bg);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+.duoItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.duoItem:hover img {
+  transform: scale(1.04);
+}
+
 /* ── Gallery ── */
 .gallery {
   display: grid;
@@ -188,6 +337,12 @@
 }
 .galleryItem:hover img {
   transform: scale(1.04);
+}
+
+/* Last item alone in its row spans full width */
+.galleryItem:last-child:nth-child(odd) {
+  grid-column: span 2;
+  aspect-ratio: 16 / 7;
 }
 
 /* ── Next project ── */

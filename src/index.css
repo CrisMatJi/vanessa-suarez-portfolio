@@ -44,20 +44,20 @@
   --theme-tint: rgba(238, 240, 245, 0);
 }
 
-/* ── CEA theme: light forest green ── */
+/* ── CEA theme: deep burgundy / wine ── */
 [data-theme="cea"] {
-  --theme-bg: #e8f2ec;
-  --theme-accent: #2d6a47;
-  --theme-accent-hover: #4a8a65;
-  --theme-tint: rgba(232, 242, 236, 0.22);
+  --theme-bg: #f0eaed;
+  --theme-accent: #6b3545;
+  --theme-accent-hover: #8a4a5e;
+  --theme-tint: rgba(240, 234, 237, 0.22);
 }
 
-/* ── SOPÓN theme: light warm sand ── */
-[data-theme="sopon"] {
-  --theme-bg: #f5ede0;
-  --theme-accent: #a05020;
-  --theme-accent-hover: #c06830;
-  --theme-tint: rgba(245, 237, 224, 0.22);
+/* ── AJIBE theme: warm stone / adobe ── */
+[data-theme="ajibe"] {
+  --theme-bg: #ede6dc;
+  --theme-accent: #7a5230;
+  --theme-accent-hover: #9a6a44;
+  --theme-tint: rgba(237, 230, 220, 0.22);
 }
 
 /* === Reset === */

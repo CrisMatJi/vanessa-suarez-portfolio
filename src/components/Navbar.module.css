@@ -64,8 +64,15 @@
   color: var(--accent-hover) !important;
   border-color: var(--accent) !important;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .nav { padding: 0 1.25rem; }
   .brand { display: none; }
-  .links { gap: 1.25rem; }
+  .links { gap: 0.6rem; }
+  .links button {
+    font-size: 0.625rem;
+    letter-spacing: 0.1em;
+  }
+  .ctaBtn {
+    padding: 0.4rem 0.7rem !important;
+  }
 }
