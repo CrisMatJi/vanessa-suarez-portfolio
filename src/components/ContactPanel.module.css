@@ -58,9 +58,35 @@
   color: var(--text-primary); transition: color 0.2s;
 }
 .emailLink:hover { color: var(--accent); }
-.socials { display: flex; gap: 1.5rem; }
-.socials a { transition: color 0.2s; }
-.socials a:hover { color: var(--text-primary); }
+.socials { display: flex; gap: 0.5rem; }
+
+.socialBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.9rem;
+  transition:
+    background 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.socialBtn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.socialIcon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
 
 /* Form */
 .form { display: flex; flex-direction: column; gap: 1.75rem; }
