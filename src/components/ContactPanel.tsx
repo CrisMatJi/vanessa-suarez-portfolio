@@ -59,8 +59,8 @@ export default function ContactPanel({ isOpen, onClose }: Props) {
               tus ideas y necesidades.
             </p>
             <div className={styles.info}>
-              <a href="mailto:vanessa_cal_sua@gmail.com" className={styles.emailLink}>
-                vanessa_cal_sua@gmail.com
+              <a href="mailto:vanessa.cal.sua@gmail.com" className={styles.emailLink}>
+                vanessa.cal.sua@gmail.com
               </a>
               <div className={styles.socials}>
                 <a href="https://www.linkedin.com/in/vanessa-calvente-suarez-932b14371/" target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>

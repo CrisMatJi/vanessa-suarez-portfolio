@@ -17,8 +17,8 @@ export default function HomePanel() {
             sensibilidad y detalle.
           </p>
           <div className={styles.asideRight}>
-            <a href="mailto:vanessa_cal_sua@gmail.com" className={styles.email}>
-              vanessa_cal_sua@gmail.com
+            <a href="mailto:vanessa.cal.sua@gmail.com" className={styles.email}>
+              vanessa.cal.sua@gmail.com
             </a>
             <div className={styles.social}>
               <a

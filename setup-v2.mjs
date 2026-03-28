@@ -321,10 +321,10 @@ export default function Home({ onProjectClick }: HomeProps) {
             sensibilidad y detalle.
           </p>
           <a
-            href="mailto:vanessa_cal_sua@gmail.com"
+            href="mailto:vanessa.cal.sua@gmail.com"
             className={styles.email}
           >
-            vanessa_cal_sua@gmail.com
+            vanessa.cal.sua@gmail.com
           </a>
         </div>
       </div>
@@ -1031,8 +1031,8 @@ export default function ContactPanel({ isOpen, onClose }: Props) {
               tus ideas y necesidades.
             </p>
             <div className={styles.info}>
-              <a href="mailto:vanessa_cal_sua@gmail.com" className={styles.emailLink}>
-                vanessa_cal_sua@gmail.com
+              <a href="mailto:vanessa.cal.sua@gmail.com" className={styles.emailLink}>
+                vanessa.cal.sua@gmail.com
               </a>
               <div className={styles.socials}>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="label">Instagram</a>
