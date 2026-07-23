@@ -19,6 +19,14 @@ export default function App() {
     document.documentElement.dataset.theme = themeKey;
   }, [themeKey]);
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.get('panel') === 'contact') {
+      setOverlay('contact');
+    }
+  }, []);
+
   const handleProjectFromPanel = (id: string) => {
     setOverlay(null);
     setActiveProjectId(id);
